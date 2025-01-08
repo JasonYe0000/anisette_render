@@ -1,5 +1,5 @@
-# Use a minimal base image with Docker CLI pre-installed
-FROM docker:cli
+# Use a minimal base image
+FROM alpine:latest
 
 # Install curl to download the file
 RUN apk add --no-cache curl
