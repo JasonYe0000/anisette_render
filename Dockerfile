@@ -5,7 +5,7 @@ FROM alpine:latest
 RUN apk add --no-cache curl
 
 # Download the .tar file from the hosting service
-RUN curl -L -o /tmp/anisette_bak.tar https://drive.google.com/file/d/1Lmzx0DEy7y6FNiCe7CECzLpDbTLbYbqS/view?usp=drive_link
+RUN curl -L -o /tmp/anisette_bak.tar https://drive.google.com/uc?export=download&id=1Lmzx0DEy7y6FNiCe7CECzLpDbTLbYbqS
 
 # Load the tarball into Docker
 RUN docker load -i /tmp/anisette_bak.tar
